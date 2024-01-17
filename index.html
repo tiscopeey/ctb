@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- css here -->
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <p id="line" style="display:none;"></p>
+    <p id="station" style="display:none;"></p>
+    <div class="centerDiv">
+      <h1>城巴抵站時間</h1>
+    </div>
+	<h3 id="routeNumber"></h1>
+	<h3 id="stopName"></h1>
+	
+	<div class="centerDiv">
+		<input type="text" id="routeSearch" class="routeSearch" onkeyup="searchRoute()" placeholder="Search...">
+	</div>
+
+    <div id="routeList" style="display: none;">
+      <table id="listTable" class="timetable">
+        
+      </table>
+    </div>
+
+    <div id="stationList" style="display: none;">
+      <table id="stationTable" class="timetable">
+        
+      </table>
+    </div>
+	
+	<div class="centerDiv">
+      <span id="waiting" class="loadingsrn" style="color: lime;">請稍等</span>
+    </div>
+
+    <div class="centerDiv" id="loadingdiv">
+      <span id="loading" class="loadingsrn" style="display: none;">搜尋中...</span>
+    </div>
+
+    <div class="centerDiv" id="bkhp">
+      <input type="button" class="btnOne" value="返回主頁" onclick="hptoHome();" style="background-color: #69928F; display: block;" id="hp">
+    </div>
+	
+	<p style="font-size: 50%;">Disclaimer: This site may use various types of technologies to record visit data to analyse site traffic and provide a better experience.</p>
+	<div style="display: none;">
+      <img style="display:none" src="https://data.gov.hk/assets/shared/img/logo_psi-portal-2x.png" />
+    </div>
+
+	<script src="script.js"></script>
+  </body>
+</html>
